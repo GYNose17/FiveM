@@ -1,0 +1,3 @@
+o script foi removido e atualizado para e está na pasta 
+essenciais/login_wl
+após configura-lo igual na aula pode apaga r essa pasta aqui.

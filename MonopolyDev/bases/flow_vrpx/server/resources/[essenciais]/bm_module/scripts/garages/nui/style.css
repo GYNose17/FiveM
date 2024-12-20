@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100% !important;
+    height: 100vh !important;
+    color: #fff;
+    user-select: none;
+    overflow: hidden;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(images/bg.png); */
+}
+
+input {
+    outline: none;
+    font-size: .8vw;
+    color: #fff;
+}
+
+
+#garagem {
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, rgba(88, 48, 190, 0.93) 0%, rgba(88, 48, 190, 0.93) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vw;
+}
+
+.top_garagem {
+    width: 100%;
+    margin-bottom: .5vw;
+}
+
+.buttons_garagem {
+    width: 14.21875vw;
+    height: 2.3958333333333335vw;
+    display: flex;
+    margin-top: 1vw;
+    border: .12vw solid;
+    border-image: linear-gradient(36.9deg, #160A99 -2.91%, rgba(0, 41, 255, 0) 97.98%) 1;
+}
+
+.buttons_garagem button {
+    width: 50%;
+    background: transparent !important;
+    border: 0;
+    color: #fff;
+    position: relative;
+    font-size: .8vw;
+}
+
+.buttons_garagem button:first-child:after {
+    content: '';
+    display: block;
+    width: .1vw;
+    height: 80%;
+    right: -0.05vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 333;
+    background: linear-gradient(to top, #fff0, #fff8, #fff0);
+}
+
+.buttons_garagem button:hover {
+    transform: scale(1.03);
+}
+
+.logo {
+    width: 16.302083333333336vw;
+}
+
+::placeholder {
+    color: #fff8;
+}
+
+.menu_garagem {
+    display: flex;
+}
+
+.menu_garagem input {
+    width: 14.427083333333334vw;
+    margin-top: 1vw;
+    margin-left: .5vw;
+    height: 2.3958333333333335vw;
+    border: .12vw solid;
+
+    border-image: linear-gradient(36.9deg, #160A99 -2.91%, rgba(0, 41, 255, 0) 97.98%) 1;
+    background: linear-gradient(90deg, rgba(88, 48, 190, 0.93) 0%, rgba(88, 48, 190, 0.93) 100%);
+    text-align: center;
+}
+
+.content_garagem {
+    width: 90%;
+    height: 55.97916666666667vw;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left_garagem {
+    width: 100%;
+    height: 27.6875vw;
+    border: 0.05vw solid;
+    position: relative;
+    border-image: linear-gradient(36.9deg, #160A99 -2.91%, rgba(0, 41, 255, 0) 97.98%) 1;
+    background: linear-gradient(180deg, rgba(72, 25, 157, 0) 0%, rgba(72, 25, 157, 0.35) 100%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.229166666666667vw;
+}
+
+.right_garagem {
+    width: 100%;
+    height: 14vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.item_car_garagem {
+    width: 12.34375vw;
+    height: 12.34375vw;
+    border: 0.05vw solid;
+    border-image: linear-gradient(36.9deg, #160A99 -2.91%, rgba(0, 41, 255, 0) 97.98%) 1;
+    background: linear-gradient(180deg, rgba(72, 25, 157, 0) 0%, rgba(72, 25, 157, 0.35) 100%);
+    margin-left: .5vw;
+    margin-top: .3vw;
+    display: inline-block;
+
+    position: relative;
+}
+
+.item_car_garagem:first-child {
+    margin: 0;
+}
+
+.item_car_select {
+    border: .05vw solid;
+    border-image: linear-gradient(36.9deg, #990A8B -2.91%, rgba(255, 0, 122, 0) 97.98%) 1;
+    background: linear-gradient(180deg, rgba(157, 25, 128, 0) 0%, rgba(157, 25, 144, 0.35) 100%);
+}
+
+.item_car_garagem:hover {
+    transform: scale(1.01);
+}
+
+
+
+.favorite_garagem {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    width: 0.78125vw;
+}
+
+.name_garagem {
+    width: 70%;
+    margin: auto;
+    margin-top: 1vw;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1vw;
+    font-size: 0.6770833333333334vw;
+}
+
+.left_garagem .name_garagem {
+    font-size: 1vw;
+}
+
+.img_car_garagem {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1vw;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+}
+
+.value_garagem {
+    width: 100%;
+    margin-top: .5vw;
+    text-align: center;
+}
+
+.left_garagem .img_car_garagem {
+
+    position: static;
+    width: 70%;
+
+    margin-top: 1vw;
+    margin-left: 15%;
+}
+
+.buttons_show_garagem {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button_garagem {
+    width: 6.510416666666667vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.6666666666666667vw;
+}
+
+.sell_garagem {
+    background: #FF522D;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.6770833333333334vw;
+}
+
+.deposit_garagem {
+    background: #75BEF2;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.6770833333333334vw;
+}
+
+.witdhdraw_garagem {
+    background: #75F2C5;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.6770833333333334vw;
+}
+
+.witdhdraw_garagem2 {
+    background: #75F2C5;
+    color: #000;
+    font-weight: 800;
+    font-size: 0.5170833333333334vw;
+}
+
+
+.showroom_garagem {
+    width: 30.625vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.showroom_garagem img {
+    width: 30.625vw;
+}
+
+
+.info_cars_garagem {
+    width: 15.833333333333334vw;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(157, 25, 128, 0.175) 0%, rgba(157, 25, 144, 0.35) 100%);
+
+    position: absolute;
+    right: 0;
+}
+
+
+.buttons_info_garagem {
+    width: 50%;
+    margin: auto;
+    height: .6666666666666667vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.button_info_garagem {
+    width: 35%;
+    height: .6666666666666667vw;
+    font-size: 0.6770833333333334vw;
+    border-radius: .333vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    background: #fff8;
+    margin-right: .2vw;
+}
+
+.select_preview {
+    background: #fff;
+    box-shadow: 0 0 .1vw #0008;
+
+}
+
+.title_preview {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: .5vw;
+    font-size: 1vw;
+}
+
+.item_preview {
+    width: 13.55vw;
+    height: 2.5vw;
+    margin: auto;
+    margin-left: 1vw;
+}
+
+.text_item_preview {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.text_item_preview p {
+    position: absolute;
+    right: 0;
+}
+
+.proguess_garagem {
+    float: right;
+}
+
+svg {
+    width: 13vw !important;
+    height: 1vw;
+    float: right;
+}
+
+.ldBar-label {
+    display: none;
+}
+
+.arrow_preview {
+    width: 0.7vw;
+}
+
+.yess_preview {
+    width: 12.7vw;
+    height: .5vw;
+
+    position: relative;
+    right: .15vw;
+
+    background: url(images/progress_yess.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    float: right;
+}
+
+.no_preview {
+    width: 12.7vw;
+    height: .5vw;
+
+    position: relative;
+    right: .15vw;
+
+    background: url(images/progress_no.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    float: right;
+}
+
+.data_tuning {
+    opacity: 0;
+    position: absolute;
+    top: 2vw;
+}
+
+
+::-webkit-scrollbar {
+    width: 0.2604166666666667vw;
+    height: 0.4166666666666667vw;
+    background-color: #fff8;
+    display: block !important;
+    /* or add it to the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+@media screen and (min-width: 2500px) {
+    #garagem {
+        zoom: 0.8;
+    }
+}
+
+
+.button_garagem:hover{
+    filter: brightness(.9);
+}

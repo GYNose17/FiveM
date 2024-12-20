@@ -1,0 +1,978 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani';
+    overflow: hidden;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container {
+    position: absolute;
+    top: 2.656vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#logo-container img {
+    height: 22.141vw;
+}
+
+#location-container {
+    width: 13.542vw;
+    height: 1.771vw;
+    position: absolute;
+    left: 2.29vw;
+    bottom: 2.29vw;
+    display: flex;
+    align-items: center;
+}
+
+.location-icon-frame {
+    width: 1.771vw;
+    height: 1.771vw;
+    background: rgba(0, 188, 126, 0.94);
+    border-radius: 0.208vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-icon-frame img {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.location-frame {
+    flex: 1;
+    height: 100%;
+    margin-left: 0.417vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-frame span {
+    font-weight: 600;
+    font-size: 0.833vw;
+    color: #FFF;
+}
+
+.location-frame p {
+    font-weight: 400;
+    font-size: 0.675vw;
+    color: #FFF;
+    margin-top: -0.3vw;
+}
+
+.hour-text {
+    font-weight: 600;
+    font-size: 0.833vw;
+    color: #FFF;
+    position: absolute;
+    right: 0;
+}
+
+#weapon-container {
+    position: absolute;
+    top: 3.385vw;
+    right: 3.333vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.radio-area {
+    margin-top: 0.885vw;
+    max-height: 1.302vw;
+    display: flex;
+    gap: 0.885vw;
+    font-family: 'Rajdhani';
+}
+
+.frequency-area {
+    display: flex;
+    align-items: center;
+    gap: 0.417vw;
+}
+
+.frequency-area img {
+    width: 0.729vw;
+    height: 1.302vw;
+}
+
+.frequency-frame {
+    padding: 0.313vw 0.573vw;
+    background: rgba(0, 188, 126, 0.09);
+    border-radius: 0.208vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.775vw;
+    color: #00bc7e;
+}
+
+.microphone-area {
+    height: 1.302vw;
+    gap: 0.417vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.microphone-area img {
+    width: 0.729vw;
+    height: 1.25vw;
+}
+
+.microphone-frame {
+    padding: 0.313vw 0.573vw;
+    background: rgba(0, 188, 126, 0.09);
+    border-radius: 0.208vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.775vw;
+    color: #00bc7d;
+}
+
+.identity-area {
+    max-height: 1.302vw;
+    font-family: 'Rajdhani';
+    display: flex;
+    gap: 0.885vw;
+}
+
+.identify-area {
+    display: flex;
+    align-items: center;
+    gap: 0.208vw;
+    font-weight: 400;
+    font-size: 0.825vw;
+    color: #ffffff80;
+}
+
+.identify-frame {
+    padding: 0.313vw 0.573vw;
+    background: rgba(0, 188, 126, 0.09);
+    border-radius: 0.208vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.775vw;
+    color: #00bc7d;
+}
+
+.temperature-area {
+    height: 1.302vw;
+    gap: 0.417vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature-area img {
+    width: 0.9vw;
+    height: 1.25vw;
+
+}
+
+.temperature-frame {
+    padding: 0.313vw 0.573vw;
+    background: rgba(0, 188, 126, 0.09);
+    border-radius: 0.208vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.775vw;
+    color: #00bc7d;
+}
+
+.gemstone-area {
+    height: 1.302vw;
+    gap: 0.417vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gemstone-area img {
+    width: 0.729vw;
+    height: 1.25vw;
+
+}
+
+.gemstone-frame {
+    padding: 0.313vw 0.573vw;
+    background: rgba(0, 188, 126, 0.09);
+    border-radius: 0.208vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.775vw;
+    color: #00bc7d;
+}
+
+.wanted-area {
+    margin-top: 0.885vw;
+    display: flex;
+    gap: 0.305vw;
+}
+
+.wanted-area svg {
+    height: 1.35vw;
+}
+
+#weapon-infos-container {
+    height: 3.021vw;
+    margin-top: 3.281vw;
+    display: flex;
+}
+
+.safemode-frame {
+    width: 7.917vw;
+    height: 100%;
+    background: #44af6966;
+    border-radius: 0.208vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 0.677vw;
+}
+
+.safemode-frame img {
+    width: 0.938vw;
+    height: 1.042vw;
+}
+
+.text-safemode-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-safemode-area p {
+    font-weight: 600;
+    font-size: 0.675vw;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0.2vw;
+}
+
+.text-safemode-area span {
+    font-weight: 600;
+    font-size: 0.91vw;
+    color: #FFFFFF;
+    margin-top: -0.205vw;
+}
+
+.weapon-area {
+    height: 100%;
+    margin-left: 0.99vw;
+    font-family: 'Rajdhani';
+    display: none;
+}
+
+.weapon-frame {
+    width: 100%;
+    height: 1.406vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.weapon-frame p {
+    font-weight: 600;
+    font-size: 0.932vw;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.ammunition-area {
+    width: 100%;
+    height: 1.51vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.ammunition-area img {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.quantity-frame {
+    height: 100%;
+    font-weight: 600;
+    font-size: 1.042vw;
+    line-height: 2.344vw;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 0.208vw;
+}
+
+.loaded-frame {
+    margin-right: 0.6rem;
+    height: 100%;
+    line-height: 1.979vw;
+    font-weight: 600;
+    font-size: 1.875vw;
+    color: rgb(255, 255, 255);
+}
+
+.loaded-frame span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#content-middy-container {
+    position: absolute;
+    bottom: 6.927vw;
+    display: flex;
+    align-items: flex-end;
+    gap: 2.917vw;
+}
+
+.progress-area {
+    width: 4.531vw;
+    height: 4.531vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-origin: center center;
+    transform: rotate(90deg);
+}
+
+.progress-area svg circle {
+    width: 100%;
+    height: 100%;
+    transform: translate(3px, 3px);
+    stroke-width: 4px;
+}
+
+.progress-area svg circle:nth-child(1) {
+    stroke: rgba(0, 0, 0, 0.3);
+    stroke-dasharray: 16rem;
+}
+
+.progress-area svg circle:nth-child(2) {
+    stroke: #00bc7e;
+    stroke-dasharray: 16rem;
+    stroke-dashoffset: 16rem;
+    transition: all ease .1s;
+
+}
+
+.porcent-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.729vw;
+    color: #FFF;
+    transform: rotate(-90deg);
+}
+
+.request-area {
+    width: 19.479vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.26vw;
+}
+
+.request-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.417vw;
+}
+
+.request-text-frame {
+    width: 100%;
+    min-height: 5.26vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), rgba(255, 255, 255, 0.02);
+    border: 0.052vw solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.208vw;
+    padding: .5vw 0;
+}
+
+.buttons-area {
+    width: 100%;
+    height: 2.865vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-area button {
+    width: 9.531vw;
+    height: 100%;
+    border-radius: 0.208vw;
+    font-weight: 600;
+    font-size: 0.729vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.094vw;
+}
+
+.buttons-area button img {
+    width: 1.146vw;
+    height: 1.146vw;
+}
+
+.buttons-area button:nth-child(1) {
+    background: linear-gradient(90deg, rgba(68, 175, 105, 0.4) 0%, rgba(68, 175, 105, 0.18) 97.94%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.05);
+    color: #44AF69;
+}
+
+.buttons-area button:nth-child(2) {
+    background: linear-gradient(90deg, rgba(251, 54, 64, 0.4) 0%, rgba(251, 54, 64, 0.18) 97.94%);
+    border: 0.052vw solid rgba(255, 255, 255, 0.05);
+    color: #FB3640;
+}
+
+.request-text-frame span {
+    width: 100%;
+    margin-top: 0.417vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.042vw;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.request-text-frame p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 0.625vw;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0 .5vw;
+    text-align: center;
+}
+
+#car-container {
+    width: 12.865vw;
+    height: 10.417vw;
+    position: absolute;
+    right: 3.333vw;
+    bottom: -3vw;
+    opacity: 0;
+}
+
+.speedometer-frame {
+    width: 12.865vw;
+    height: 10.417vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.speedometer-frame svg path {
+    width: 11.406vw !important;
+    height: 9.271vw !important;
+    fill: none;
+    stroke-opacity: 1;
+    stroke-dasharray: 30rem;
+    stroke-dashoffset: 0;
+}
+
+.speedometer-frame svg path:nth-child(1) {
+    stroke: white;
+    stroke-opacity: .2;
+}
+
+.speedometer-frame svg path:nth-child(2) {
+    stroke-dasharray: 31rem;
+    stroke-dashoffset: 31rem;
+    stroke: white;
+    stroke-opacity: 1;
+    transition: all ease .1s;
+}
+
+.fuel-frame {
+    width: 2.344vw;
+    height: 6.563vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.fuel-frame svg path {
+    fill: none;
+    stroke-opacity: 1;
+    stroke-dasharray: 8rem;
+    stroke-dashoffset: 0;
+}
+
+.fuel-frame svg path:nth-child(1) {
+    stroke: rgb(255, 255, 255) !important;
+    stroke-opacity: .2;
+}
+
+.fuel-frame svg path:nth-child(2) {
+    stroke-dasharray: 9rem;
+    stroke-dashoffset: 9rem;
+    stroke: #FF6666 !important;
+    stroke-opacity: 1;
+    transition: all ease .1s;
+}
+
+.fuel-frame img {
+    width: 0.625vw;
+    height: 0.729vw;
+    position: absolute;
+    right: 0;
+    bottom: -.5vw;
+}
+
+
+.nitro-frame {
+    width: 2.344vw;
+    height: 6.563vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nitro-frame svg path {
+    fill: none;
+    stroke-opacity: 1;
+    stroke-dasharray: 8rem;
+    stroke-dashoffset: 0;
+}
+
+.nitro-frame svg path:nth-child(1) {
+    stroke: rgb(255, 255, 255) !important;
+    stroke-opacity: .2;
+}
+
+.nitro-frame svg path:nth-child(2) {
+    stroke-dasharray: 9rem;
+    stroke-dashoffset: 9rem;
+    stroke: #41EAB7 !important;
+    stroke-opacity: 1;
+    transition: all ease .1s;
+}
+
+.nitro-frame img {
+    width: 0.469vw;
+    height: 0.938vw;
+    position: absolute;
+    left: 0;
+    bottom: -.7vw;
+}
+
+.mileage-frame {
+    color: #FFF;
+    position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    margin-top: 1vw;
+    font-size: 3.333vw;
+    text-align: center;
+}
+
+.mileage-frame p span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.km {
+    position: absolute;
+    bottom: -.3vw;
+    font-weight: 500;
+    font-size: 0.833vw;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.icons-frame {
+    width: 4.74vw;
+    height: 1.146vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.belt-icon {
+    width: 0.736vw;
+    height: 1.146vw;
+    opacity: .5;
+}
+
+.door-icon {
+    width: 0.781vw;
+    height: 0.729vw;
+    opacity: .5;
+}
+
+.engine-icon {
+    width: 1.0416666666666667vw;
+    height: 0.7291666666666667vw;
+    opacity: .5;
+}
+
+.active-icon {
+    opacity: 1;
+}
+
+#player-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2.29vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.677vw;
+}
+
+.life-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.life-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: rgba(251, 54, 64, 1);
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.life-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #FB3640;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.life-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: rgba(251, 54, 64, 0.2);
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.life-middy img {
+    width: 0.729vw;
+    height: 0.638vw;
+}
+
+.vest-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vest-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: rgba(255, 255, 255, 1);
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.vest-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #FFF;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.vest-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vest-middy img {
+    width: 0.729vw;
+    height: 0.833vw;
+}
+
+.hungry-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hungry-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: rgba(241, 115, 0, 1);
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.hungry-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #F17300;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.hungry-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: rgba(241, 115, 0, 0.2);
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hungry-middy img {
+    width: 0.729vw;
+    height: 0.833vw;
+}
+
+.thirst-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirst-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: rgba(102, 154, 225, 1);
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.thirst-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #669AE1;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.thirst-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: rgba(102, 154, 225, 0.2);
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirst-middy img {
+    width: 0.625vw;
+    height: 0.833vw;
+}
+
+.stress-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stress-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: #FDE047;
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.stress-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #FDE047;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.stress-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: #FDE04733;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stress-middy img {
+    width: 0.625vw;
+    height: 0.833vw;
+}
+
+.oxygen-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.oxygen-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: #A5FFD6;
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.oxygen-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #A5FFD6;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.oxygen-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: #A5FFD633;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oxygen-middy img {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.cough-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cough-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: #CCCCCC;
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.cough-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #CCCCCC;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.cough-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: #CCCCCC33;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cough-middy img {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.reposed-frame {
+    width: 100%;
+    height: 1.875vw;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.reposed-frame svg circle:nth-child(1) {
+    stroke-opacity: .2;
+    stroke: #ff6b6b;
+    stroke-dasharray: 8rem;
+    transition: all ease .5s;
+}
+
+.reposed-frame svg circle:nth-child(2) {
+    stroke-opacity: 1;
+    stroke: #ff6b6b;
+    stroke-dasharray: 13rem;
+    stroke-dashoffset: 13rem;
+    transition: all ease .5s;
+}
+
+.reposed-middy {
+    width: 1.458vw;
+    height: 1.458vw;
+    background: #ff6b6b33;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reposed-middy img {
+    width: 0.833vw;
+    height: 0.833vw;
+}
+
+.life-icon {
+    margin-top: .1vw;
+}

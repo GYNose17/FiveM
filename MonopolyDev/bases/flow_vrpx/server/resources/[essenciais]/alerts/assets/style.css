@@ -1,0 +1,251 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .5);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#hub-empty {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: -176px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .6);
+    letter-spacing: 1px;
+    transform: translateX(-50%);
+}
+
+#hub-tray {
+    position: fixed;
+    z-index: 10;
+    width: 330px;
+    height: 70%;
+    top: 150px;
+    border-radius: 5px;
+    right: 0;
+    padding: 10px;
+    transition: all .2s ease-out;
+}
+
+#hub-tray.open {
+    border-radius: 5px;
+    right: 350px;
+}
+
+#hub-tray .hub-notification.will-be-persistent:first-child {
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#hub-tray .hub-notification.will-be-persistent:first-child::after {
+    content: 'Pressione [F5] para abrir';
+    position: absolute;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    text-align: center;
+    margin-top: 5px;
+    transition: all .2s ease-out;
+}
+
+#hub {
+    position: fixed;
+    z-index: 10;
+    width: 350px;
+    height: 70%;
+    border-radius: 5px;
+    top: 150px;
+    right: -350px;
+    background: #0008;
+    transition: all .2s ease-out;
+}
+
+#hub.open {
+    right: 5px;
+}
+
+.hub-title {
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.list-action {
+    float: right;
+    font-size: 11px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.list-action:hover {
+    color: #fff;
+}
+
+#hub.lists-1 .hub-notifications {
+    position: absolute;
+    max-height: calc(100% - 80px);
+    width: calc(100% - 30px);
+}
+
+#hub.lists-2 .hub-notifications {
+    max-height: 315px;
+}
+
+.hub-notifications {
+    padding: 0 15px 24px 15px;
+    overflow-y: scroll;
+}
+
+.hub-notification {
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, .7);
+    background: #0008;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    transition: all .2s ease-out;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.hub-notification:hover, #hub-tray .hub-notification {
+    opacity: 1;
+}
+
+#hub-tray .hub-notification {
+    transition: none;
+}
+
+.hub-notification:last-child {
+    margin-bottom: 0px;
+}
+
+.hub-notification-options {
+    height: 30px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .2s ease-out;
+}
+
+.hub-notification:hover .hub-notification-options {
+    max-height: 30px;
+}
+
+.hub-notification-accepted {
+    background:  rgba(76, 175, 80, .5);
+    color: #fff;
+}
+
+.hub-notification-accepted:hover {
+    background:  rgba(76, 175, 80, .9);
+}
+
+.hub-notification-options div {
+    float: left;
+    height: 30px;
+}
+
+.options-1 div {
+    width: 100%;
+}
+
+.options-2 div {
+    width: 50%;
+}
+
+.hub-notification-option-remove {
+    background: url(images/icon-close.png) center no-repeat, rgba(255, 0, 0, .5);
+}
+
+.hub-notification-option-remove:hover {
+    background: url(images/icon-close.png) center no-repeat, rgba(255, 0, 0, .7);
+}
+
+.hub-notification-option-accept {
+    background: url(images/icon-check.png) center no-repeat, rgba(76, 175, 80, .5);
+}
+
+.hub-notification-option-accept:hover {
+    background: url(images/icon-check.png) center no-repeat, rgba(76, 175, 80, .9);
+}
+
+.hub-notification-option-accepted {
+    background: rgba(253, 193, 7, .5);
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.hub-notification-option-accepted:hover {
+    background: rgba(253, 193, 7, .9);
+}
+
+.hub-notification-title {
+    padding: 10px 0 0 10px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.hub-notification-text {
+    padding: 0 10px 10px 10px;
+    font-size: 14px;
+}
+
+.hub-notification-timestamp {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.hub-notification-icon {
+    background: url(images/icon-admin.png) center no-repeat, #5830BE;
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#hub-mute {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+}

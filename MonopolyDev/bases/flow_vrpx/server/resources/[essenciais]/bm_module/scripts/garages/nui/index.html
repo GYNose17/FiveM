@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bibs/loading-bar.css" />
+    <script type="text/javascript" src="bibs/loading-bar.js"></script>
+</head>
+
+<body>
+    <div id="garagem">
+        <div class="content_garagem">
+            <div class="top_garagem">
+                <img src="garages/nui/images/logo_garage.png" alt="" class="logo">
+                <div class="menu_garagem">
+                    <div class="buttons_garagem">
+                        <button onclick="setMenu('all')">TODOS</button>
+                        <button onclick="setMenu('favorite')">FAVORITOS</button>
+                    </div>
+                    <input type="text" placeholder="Pesquise pelo nome do veiculo" class="search_garagem">
+                </div>
+            </div>
+            <div class="left_garagem">
+                <div class="buttons_show_garagem">
+                    <div class="button_garagem witdhdraw_garagem2" onclick="guardar(true)">GUARDAR PROXIMO</div>
+                    <div class="button_garagem deposit_garagem" onclick="guardar(false)">GUARDAR</div>
+                    <div class="button_garagem witdhdraw_garagem" onclick="retirar()">RETIRAR</div>
+                </div>
+                <div class="showroom_garagem">
+                    <img src="" onerror="this.src='garages/nui/images/default.png'"  alt="">
+                </div>
+                <div class="info_cars_garagem">
+                    <div class="buttons_info_garagem">
+                        <div class="button_info_garagem select_preview" onclick="selectPreview(this, false)">
+                        </div>
+                        <div class="button_info_garagem" onclick="selectPreview(this, true)">
+                        </div>
+                    </div>
+
+                    <section class="data_geral">
+                        <h3 class="title_preview">
+                            Visão Geral
+                        </h3>
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Velocidade Maxima</span>
+                            </div>
+
+                            <div class="velo_max proguess_garagem" data-img="garages/nui/images/proguess_infos.svg"></div>
+                        </div>
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Frenagem</span>
+                            </div>
+
+                            <div class="frenagem proguess_garagem" data-img="garages/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Agilidade</span>
+                            </div>
+
+                            <div class="agilidade proguess_garagem" data-img="garages/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Aderencia</span>
+                            </div>
+
+                            <div class="aderencia proguess_garagem" data-img="garages/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Gasolina</span>
+                            </div>
+
+                            <div class="gasolina proguess_garagem" data-img="garages/nui/images/progress_gas.svg"></div>
+                        </div>
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Motor</span>
+                            </div>
+
+                            <div class="motor proguess_garagem" data-img="garages/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Lataria</span>
+                            </div>
+
+                            <div class="lataria proguess_garagem" data-img="garages/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>IPVA</span>
+                            </div>
+
+                            <div class="ipva yess_preview"></div>
+                        </div>
+
+                        <div class="item_preview">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Detido</span>
+                            </div>
+
+                            <div class="detido no_preview"></div>
+                        </div>
+                    </section>
+
+                    <section class="data_tuning">
+                        <h3 class="title_preview">
+                            Tuning
+                        </h3>
+
+                        <div class="item_preview custom_engine">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Motor</span>
+                                <p>Ativado</p>
+                            </div>
+
+                            <div class="progress_custom yess_preview"></div>
+                        </div>
+
+                        <div class="item_preview custom_breaking">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Freios</span>
+                                <p>Desativado</p>
+                            </div>
+
+                            <div class="progress_custom no_preview"></div>
+                        </div>
+                        
+                        <div class="item_preview custom_transmission">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Transmissão</span>
+                                <p>Desativado</p>
+                            </div>
+
+                            <div class="progress_custom no_preview"></div>
+                        </div>
+
+                        <div class="item_preview custom_suspension">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Suspensão</span>
+                                <p>Desativado</p>
+                            </div>
+
+                            <div class="progress_custom no_preview"></div>
+                        </div>
+                        
+                        <div class="item_preview custom_shielding">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Blindagem</span>
+                                <p>Desativado</p>
+                            </div>
+
+                            <div class="progress_custom no_preview"></div>
+                        </div>
+                        
+                        <div class="item_preview custom_turbo">
+                            <div class="text_item_preview">
+                                <img src="garages/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Turbo</span>
+                                <p>Desativado</p>
+                            </div>
+
+                            <div class="progress_custom no_preview"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="right_garagem">
+               
+            </div>
+        </div>
+    </div>
+    <script src="garages/nui/script.js"></script>
+</body>
+
+</html>

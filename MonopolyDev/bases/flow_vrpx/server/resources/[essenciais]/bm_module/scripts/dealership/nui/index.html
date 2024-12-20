@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="bibs/loading-bar.css" />
+    <script type="text/javascript" src="bibs/loading-bar.js"></script>
+</head>
+
+<body>
+    <div id="dealership">
+        <div class="bg_dealership">
+            <img src="dealership/nui/images/1.png" alt="" class="petalas _1">
+            <img src="dealership/nui/images/2.png" alt="" class="petalas _2">
+            <img src="dealership/nui/images/3.png" alt="" class="petalas _3">
+            <img src="dealership/nui/images/4.png" alt="" class="petalas _4">
+            <img src="dealership/nui/images/5.png" alt="" class="petalas _5">
+            <img src="dealership/nui/images/6.png" alt="" class="petalas _6">
+            <img src="dealership/nui/images/7.png" alt="" class="petalas _7">
+            <img src="dealership/nui/images/8.png" alt="" class="petalas _8">
+            <img src="dealership/nui/images/9.png" alt="" class="petalas _9">
+        </div>
+        <div class="content_select_conce">
+            <div class="top_conce">
+                <img src="dealership/nui/images/logo_garage.png" alt="" class="logo">
+            </div>
+            <div class="list_select_conce">
+                <div class="item_select_conce" onCLick="selectMenu('sedans')"
+                    style="background: url(dealership/nui/images/box-sedan.png);  background-size: 100%;">
+                    <img class="imageCar" src="dealership/nui/images/sedan.png" alt="" />
+                    <div class="img_lock">
+                        <img class="lock_concessionaria" src="dealership/nui/images/CHAVE-CARROS.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="item_select_conce" onCLick="selectMenu('suvs')"
+                    style="background: url(dealership/nui/images/box-suv.png);  background-size: 100%;">
+                    <img class="imageCar" src="dealership/nui/images/suv.png" alt="" />
+                    <div class="img_lock">
+                        <img class="lock_concessionaria" src="dealership/nui/images/CHAVE-CARROS.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="item_select_conce" onCLick="selectMenu('imports')"
+                    style="background: url(dealership/nui/images/box-importados.png);  background-size: 100%;">
+                    <img class="imageCar" src="dealership/nui/images/importados.png" alt="" />
+                    <div class="img_lock">
+                        <img class="lock_concessionaria" src="dealership/nui/images/CHAVE-CARROS.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="item_select_conce" onCLick="selectMenu('service')"
+                    style="background: url(dealership/nui/images/box-caminhoes.png);  background-size: 100%;">
+                    <img class="imageCar" src="dealership/nui/images/caminhoes.png" alt="" />
+                    <div class="img_lock">
+                        <img class="lock_concessionaria" src="dealership/nui/images/CHAVE-CARROS.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="item_select_conce" onCLick="selectMenu('motos')"
+                    style="background: url(dealership/nui/images/box-motos.png);  background-size: 100%;">
+                    <img class="imageCar" src="dealership/nui/images/motos.png" alt="" />
+                    <div class="img_lock">
+                        <img class="lock_concessionaria" src="dealership/nui/images/CHAVE-motos.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="item_select_conce" onCLick="selectMenu('outros')"
+                    style="background: url(dealership/nui/images/box-outros.png); background-size: 100%;">
+                    <img class="imageCar outros_img" src="dealership/nui/images/outros.png" alt="" />
+                    <div class="img_lock">
+                        <img class=" lock_concessionaria" src="dealership/nui/images/CHAVE-outros.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="myVehicles_conce" onCLick="selectMenu('meus')" >
+                MEUS VEICULOS
+            </div>
+            <div class="vipVehicles" onCLick="selectMenu('vip')" >
+                VIPS
+            </div>
+        </div>
+        <div class="content_conce">
+            <img src="dealership/nui/images/logo_garage.png" alt="" class="logo">
+            <div class="top_conce">
+                <div class="menu_conce">
+                    <input type="text" placeholder="Pesquise pelo nome do veiculo" class="search_conce">
+                </div>
+                <img class="back" onclick="backItem()" src="dealership/nui/images/back.png" alt="">
+            </div>
+            <div class="flex_conce">
+                <div class="right_conce">
+
+                </div>
+                <div class="left_conce">
+                    <div class="name_conce nameShow_conce">
+                        MITSUBISHI LANCER X
+                    </div>  
+                    <div class="top_left_conce">
+                        <div class="value_conce">
+                            <img src="images/money.png" alt="">
+                            R$25.0000
+                        </div>
+                        <div class="trunk_conce">
+                            <img src="dealership/nui/images/images/trunk.png" alt="">
+                            20KG
+                        </div>
+                    </div>
+
+                    <img class="img_car_conce showimg_car_conce" src="dealership/nui/images/car.png"
+                        onerror="this.src='garages/nui/images/default.png'" alt="">
+
+                    <div class="list_infos_cars">
+
+                        <div class="item_infos_cars">
+
+                            <div class="text_item_preview">
+                                <img src="dealership/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Velocidade Maxima</span>
+                            </div>
+                            <div class="velo_max proguess_garagem" data-img="dealership/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_infos_cars">
+
+                            <div class="text_item_preview">
+                                <img src="dealership/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Frenagem</span>
+                            </div>
+                            <div class="frenagem proguess_garagem" data-img="dealership/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_infos_cars">
+
+                            <div class="text_item_preview">
+                                <img src="dealership/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Agilidade</span>
+                            </div>
+                            <div class="agilidade proguess_garagem" data-img="dealership/nui/images/proguess_infos.svg"></div>
+                        </div>
+
+                        <div class="item_infos_cars">
+
+                            <div class="text_item_preview">
+                                <img src="dealership/nui/images/arrow.png" class="arrow_preview" alt="">
+                                <span>Aderencia</span>
+                            </div>
+                            <div class="aderencia proguess_garagem" data-img="dealership/nui/images/proguess_infos.svg"></div>
+                        </div>
+                    </div>
+                    <div class="content_buy">
+                        <div class="buy buy_bottom" onclick="buyVehicle()">Comprar</div>
+                        <div class="test" onclick="testDrive()">Test-Drive</div>
+                    </div>
+                    <img class="logo_conce" src="dealership/nui/images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal_buy_conce">
+            <div class="question">
+                <h3>Você tem certeza que deseja comprar este veiculo?</h3>
+                <img src="" class="showModal_conce" onerror="this.src='garages/nui/images/default.png'" alt="">
+                <div class="value_modal_conce">R$ 250000</div>
+                <div class="buttons_modal_conce">
+                    <div class="confirm_modal_conce buy" onclick="confirmBuy()">CONFIRMAR</div>
+                    <div class="cancel_modal_conce cancel" onclick="cancelBuy()">CANCELAR</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dealership/nui/script.js"></script>
+</body>
+
+</html>

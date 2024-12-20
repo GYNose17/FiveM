@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-image: url('./../images/background.png');
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+
+header h1 {
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1.756vw;
+  line-height: 99.4%;
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+header h1 strong {
+  font-weight: 900;
+  font-size: 2.455vw;
+  line-height: 99.4%;
+  
+  text-align: center;
+  
+  background: linear-gradient(190.1deg, rgba(255, 27, 236, 0.78) -13.02%, rgba(132, 0, 0, 0.78) 34.47%, rgba(245, 75, 75, 0.78) 54.82%, rgba(255, 23, 23, 0.78) 73.67%, rgba(118, 0, 0, 0.78) 106.08%), #760202;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
+}
+
+header p {
+  font-size: 1.008vw;
+  line-height: 99.4%;
+  
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.135em;
+  
+  color: #FFFFFF;
+  margin-top: 1.591vw;
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+main svg {
+  width: 42.136vw;
+  height: 7.045vw;
+}
+
+main .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .steps h3 {
+  width: 8.969vw;
+  height: 1.561vw;
+  background: radial-gradient(57.82% 332.2% at 50% 100%, rgba(255, 27, 236, 0.78) 0%, rgba(205, 0, 0, 0) 100%), rgba(0, 0, 0, 0.75);
+  border: 0.032vw solid rgba(205, 0, 0, 0.31);
+  border-radius: 0.185vw;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.778vw;
+  line-height: 99.4%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  
+  color: #FFFFFF;
+
+  position: relative;
+  top: 0.5vw;
+}
+
+main .steps > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.252vw;
+}
+
+main .steps > div .group {
+  width: 31.66vw;
+  height: 2.954vw;
+  
+  background: radial-gradient(50.17% 537.8% at 50% -33.54%, rgba(205, 0, 0, 0.14) 0%, rgba(205, 0, 0, 0) 100%), rgba(0, 0, 0, 0.75);
+  border-radius: 0.185vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .steps > div .group span {
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 50%;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 4.198vw;
+  line-height: 99.4%;
+  /* identical to box height, or 4.182vw */
+  
+  text-align: center;
+  letter-spacing: -0.04em;
+  
+  background: linear-gradient(180deg, #cd00c3 0%, rgba(205, 0, 0, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+main .steps > div .group p {
+  font-weight: 500;
+  font-size: 0.778vw;
+  line-height: 99.4%;
+  /* identical to box height, or 0.773vw */
+  
+  text-align: center;
+  letter-spacing: -0.04em;
+  
+  color: #FFFFFF;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.773vw;
+}
+
+.content {
+    width: 9.955vw;
+    height: 2.375vw;
+  
+    background: radial-gradient(126.79% 126.79% at 50% 100%, rgba(205, 0, 0, 0.28) 0%, rgba(205, 0, 0, 0) 100%), rgba(0, 0, 0, 0.1);
+    border: 0.034vw solid #760202;
+  
+    font-weight: 600;
+    font-size: 0.564vw;
+    line-height: 99.4%;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.content span {
+    font-weight: 900;
+}
+
+.id-frame {
+    width: 9.955vw;
+    height: 2.375vw;
+  
+    background: radial-gradient(126.79% 126.79% at 50% 100%, rgba(205, 16, 243, 0.28) 0%, rgba(205, 0, 0, 0) 100%), rgba(0, 0, 0, 0.1);
+    border: 0.034vw solid #52022e;
+  
+    font-weight: 600;
+    font-size: 0.564vw;
+    line-height: 99.4%;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.id-frame input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.5vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.id-frame:hover {
+    opacity: .7;
+}
+
+.button-frame {
+    margin-top: 0%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(126.79% 126.79% at 50% 100%, rgba(205, 16, 243, 0.28) 0%, rgba(205, 0, 0, 0) 100%), rgba(0, 0, 0, 0.1);
+    border: 0.034vw solid #52022e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+
+.button-frame:hover {
+    opacity: .7;
+}
+
+footer {
+    color: #FFF;
+    width: 35vw;
+    text-align: center;
+    font-size: .8vw;
+    margin-top: 5vw;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.notify-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.notify {
+    margin-top: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 0, 127);
+    border-radius: 25px;
+    color: #FFF;
+    align-items: center;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

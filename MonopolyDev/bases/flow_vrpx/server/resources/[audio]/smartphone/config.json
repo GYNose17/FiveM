@@ -1,0 +1,57 @@
+{
+  "token": "MN295-YJCE4-K6F7S-M5PBE",
+  "client": {
+    "bankType": "picpay",
+    "uploadServer": "https://discord.com/api/webhooks/1130970505290186923/reWHdJN_QLsHSpr7nheDOPbL0sMFJ2wG2ICItEG99Alf2W7SRwr60ajYgbFqDAR8H_r9",
+    "videoServer": "ws:/104.234.65.51:8080",
+    "case": "s20",
+    "isAndroid": true,
+
+    "apps": {
+      "calculator": "https://celularautenticacaofivem.xyz/imagens/calculator.webp",
+      "notes": "https://celularautenticacaofivem.xyz/imagens/notes.webp",
+      "settings": "https://fivem.jesteriruka.dev/apps/settings.png",
+      "contacts": "https://images-ext-1.discordapp.net/external/X6eRPTrhl1TEFjfXX9Jk9eHpym4njkyXioj6EDO8am8/https/fivem.jesteriruka.dev/apps/phone.png",
+      "sms": "https://fivem.jesteriruka.dev/apps/sms.webp",
+      "gallery": "https://fivem.jesteriruka.dev/apps/photos.webp",
+      "phone": "https://fivem.jesteriruka.dev/apps/phone.png",
+      "facetime": "https://celularautenticacaofivem.xyz/imagens/facetime.webp"
+      
+      
+      },
+
+      
+      "apps_android": {
+        "calculator": "https://celularautenticacaofivem.xyz/imagens/calculator.webp",
+        "notes": "https://celularautenticacaofivem.xyz/imagens/notes.webp",
+        "settings": "https://celularautenticacaofivem.xyz/imagens/settings.webp",
+        "contacts": "https://celularautenticacaofivem.xyz/imagens/contacts.webp",
+        "sms": "https://celularautenticacaofivem.xyz/imagens/sms.webp",
+        "gallery": "https://celularautenticacaofivem.xyz/imagens/gallery.webp",
+        "phone": "https://celularautenticacaofivem.xyz/imagens/phone.webp",
+        "facetime": "https://celularautenticacaofivem.xyz/imagens/facetime.webp"
+        
+        },
+
+
+
+    "useGameClock": false,
+    "phone_template": "XXXXXX",
+    "backgroundURL": "https://media.discordapp.net/attachments/1130970485736358030/1130971041993347232/anilcan-aslan-00011-1111-1.jpg?width=676&height=676",  
+    "disabledApps": []
+  },
+  
+  "call_mode": "pma-voice",
+  "webhookURL": "https://discord.com/api/webhooks/1066211349023162468/tJ6N_yXBMJT7pqWjGuqbhXCPp3qwsZCoVDEmPyDkf-2o5HF-B7QG7IINla6Gi9Cr2WLF",
+  "instagram_verify": "perm.vips",
+  "moderator": "admin.permissao",
+  "item": "celular",
+  
+  "services": [
+    { "name": "Policia", "number":"190", "permission":"perm.policia" },
+    { "name": "Paramédico", "number":"192", "permission":"perm.unizk" },
+    { "name": "Mecânico", "number":"317", "permission":"perm.mecanico" },
+    { "name": "Taxi", "number":"0800", "permission":"taxi.perm" },
+    { "name": "Bope", "number":"696", "permission":"perm.bope" }
+  ]
+}

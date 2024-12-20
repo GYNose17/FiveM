@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://loadingio.github.io/loading-bar/dist/loading-bar.css" />
+    <script src="dependencias/jquery.min.js"></script>
+    <script src="dependencias/jquery-ui.min.js"></script> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    </head>
+
+<body class="inventory">
+    <main>
+        <inventory> 
+            <header>
+                <div class="title" id="invLeftTitle">
+                    <h1>inventário <span>principal</span></h1>
+                    <small>Aqui seus itens estão seguros.</small>
+                </div>
+                <div class="weight">
+                    <h2>peso</h2>
+                    <span class="weight_info">27.0/75.0</span>
+                    <svg class="weightProgress" width="3.125rem" height="3.125rem">
+                        <circle class="outer" stroke="#FFFFFF" stroke-width=".1375rem" style="stroke-opacity: 0.2;"
+                            fill="transparent" r="1.125rem" cx="1.625rem" cy="1.625rem" stroke-dasharray="2.8438rem 5.625rem"
+                            stroke-dashoffset="0rem" />
+                        <circle class="progress progress-weight" stroke="#582DC3" stroke-width=".1375rem"
+                            style="stroke-opacity: 1; box-shadow: 0px 0px 20px rgba(2, 170, 248, 0.6);" fill="transparent" r="1.125rem" cx="1.625rem" cy="1.625rem"
+                            stroke-dasharray="2.8438rem 5.625rem" stroke-dashoffset="0" />
+                        <defs>
+                            <linearGradient id="gradient">
+                                <stop offset="30%" stop-color="#ffff" />
+                                <stop offset="100%" stop-color="#fff" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    
+                    <div class="nivel">
+                        <div class="bars">
+                            <div class="bar one"></div>
+                            <div class="bar two"></div>
+                            <div class="bar tree"></div>
+                        </div>
+                        <b>NÍVEL DE MOCHILA</b>
+                    </div>
+                </div>
+            </header>
+            <section class="invLeft"></section>
+        </inventory> 
+
+        <inventoryActions>
+            <input class="amount qtd" min="0" value="0" type="text" placeholder="QTD" />
+            <button class="button use">Usar</button>
+            <button class="button send">enviar</button>
+        </inventoryActions>
+
+        <inventory>
+            <header>
+                    <div class="title" id="invRightTitle">
+                            <h1>inventário <span>secundário</span></h1>
+                            <div id="invpeso">
+                                CHÃO
+                            </div>
+                        </div>
+                    </div>
+            </header>
+            <section class="invRight"></section>
+        </inventory>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

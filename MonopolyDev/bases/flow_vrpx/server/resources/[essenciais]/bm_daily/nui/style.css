@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    transition: all .2s ease-in-out;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#container {
+    width: 60vw;
+    min-height: 50vh;
+
+    display: none;
+
+    padding: 1vh;
+    background: radial-gradient(84.59% 84.59% at 47.67% 101.97%, rgba(88, 205, 255, 0.214912) 0%, rgba(88, 175, 255, 0) 100%),
+        linear-gradient(0deg, rgba(13, 13, 22, 0.9), rgba(13, 13, 22, 0.9));
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-radius: 1vh;
+    border: 3px solid #FFFFFF26
+}
+
+
+.left {
+    width: 30%;
+    position: relative;
+}
+
+.left::after {
+    content: '';
+    display: block;
+    width: .1vw;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #fff0, #fff, #fff0);
+}
+
+.center {
+    width: 40%;
+}
+
+
+.right {
+    width: 30%;
+    position: relative;
+}
+
+
+
+.right::after {
+    content: '';
+    display: block;
+    width: .1vw;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #fff0, #fff, #fff0);
+}
+
+.premios {
+    display: flex;
+    margin-top: 1vh;
+}
+
+
+.receiver {
+    width: 10vw;
+    height: 20vh;
+
+    margin: auto;
+    margin-top: 1vh;
+    background: rgba(26, 26, 26, 0.6);
+    border: 3px solid rgba(255, 255, 255, 0.11);
+    box-sizing: border-box;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.caixa_atual{
+    position: absolute;
+    right: .5vw;
+    top: .5vw;
+
+    color: #fff;
+}
+
+
+.receiver img {
+    height: 60%;
+}
+
+
+.button {
+
+    width: 30%;
+    margin: auto;
+    margin-top: 1vh;
+    background: linear-gradient(180deg, #00FFF0 0%, #0B827B 100%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1vh;
+
+}
+
+.button:hover {
+    box-shadow: 0 0 3vh #00ffee25;
+}
+
+.horas_jogadas {
+    margin-top: 3vh;
+}
+
+.horas_jogadas h3 {
+
+    color: rgb(255, 145, 1);
+}
+
+.horas_jogadas h3>span {
+    color: rgb(255, 255, 255);
+
+}
+
+
+.horas_jogadas p{
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.item_chance {
+    margin-top: 1vh;
+}
+
+
+.proguess {
+    width: 80%;
+    height: 1vh;
+
+    background: #fff8;
+    padding: .2vh;
+    border-radius: 1vh;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+
+.proguess span {
+    display: block;
+    width: 60%;
+    border-radius: 1vh;
+    height: 100%;
+    background: #1CD5D5;
+}
+
+.buttons{
+    display: flex;
+    width: 80%;margin: auto;
+    border: .05vw solid #fff;
+    overflow: hidden;
+    border-radius: .45vw;
+}
+.middle_button{
+    width: 50%;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.middle_button:hover{
+    background: linear-gradient(180deg, #00FFF0 0%, #0B827B 100%);
+}
+
+.sellect_buttons{
+    background: linear-gradient(180deg, #256b66 0%, #164b47 100%);
+}
